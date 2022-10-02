@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ДокВет</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header__contacts">
+        <div class="container header__contacts-flex">
+          <div class="adress">
+            <svg class="adress__icon" width="11.6" height="16.66">
+              <use href="./img/sprite.svg#icon-adressmark"></use>
+            </svg>
+            <!-- <span class="adress__text"
+              >ул. Коллонтай, 11 (метро Пр. Большевиков)</span
+            > -->
+            <a
+              class="adress__link link"
+              href="https://goo.gl/maps/XvjWnzoZiPqs9yio7"
+              target="_blank"
+              >ул. Коллонтай, 11 (метро Пр. Большевиков)</a
+            >
+          </div>
+          <div class="timetable">
+            <svg class="timetable__icon" width="21.17" height="21.63">
+              <use href="./img/sprite.svg#icon-clock"></use>
+            </svg>
+            <span class="timetable__text">Круглосуточно</span>
+          </div>
+          <ul class="phones__list">
+            <li class="phone__item">
+              <a class="phone__link link" href="tel:+78122428755">
+                <svg class="phone__icon" width="16.03" height="16.74">
+                  <use href="./img/sprite.svg#icon-phone"></use></svg
+                >+7 (812) 242-87-55
+              </a>
+            </li>
+            <li class="phone__item">
+              <a class="phone__link link" href="tel:+78122428744">
+                <svg class="phone__icon" width="16.03" height="16.74">
+                  <use href="./img/sprite.svg#icon-phone"></use></svg
+                >+7 (812) 242-87-44
+              </a>
+            </li>
+          </ul>
+          <a href="" class="header__contacts-btn">
+            <svg class="header__contacts-btn-icon" width="20.79" height="22.9">
+              <use href="./img/sprite.svg#icon-sign-icon"></use></svg
+            >Записаться
+            <!-- <span class="header__contacts-btn-label">Записаться</span> -->
+          </a>
+        </div>
+      </div>
+      <div class="header__bottompart container">
+        <nav class="navigation">
+          <a class="logo" href="./index.html">
+            <img class="logo__img" src="./img/logo/logo.png" alt="logo" />
+            <div class="logo__text">
+              <span class="logo__boldtext">ДокВет</span>
+              <span class="logo__smalltext">Ветеринарный центр</span>
+            </div>
+          </a>
+          <ul class="menu">
+            <li class="menu__item">
+              <a class="menu__link link" href="">Услуги</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link link" href="">О нас</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link link" href="">Блог</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link link" href="">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="hero container">
+        <div class="hero__content-part">
+          <h1 class="hero__title">Работа в ДокВет</h1>
+          <p class="hero__missiontext">
+            Наша клиника — амбициозный проект с миссией изменить ветеринарную
+            индустрию:
+          </p>
+          <ul class="hero__list">
+            <li class="hero__item">
+              <span class="hero__bold-item">Область в ветеринарии,</span>
+              которая занимается диагностикой Врач поможет Вам оформить
+            </li>
+            <li class="hero__item">
+              <span class="hero__bold-item">Область в ветеринарии,</span>
+              которая занимается диагностикой Врач поможет Вам оформить
+              ветеринарный паспорт и чипировать Вашего питомца
+            </li>
+            <li class="hero__item">
+              <span class="hero__bold-item">Область в ветеринарии,</span>
+              которая занимается диагностикой
+            </li>
+          </ul>
+          <p class="hero__doctortext">
+            Врач-терапевт — это универсальный доктор. Именно с этого специалиста
+            начинается любой приём, будь то лечение, профилактика или
+            консультация на такие темы, как особенности выращивания, содержания
+            и кормления питомца!
+          </p>
+        </div>
+        <div class="hero__image-part">
+          <img
+            class="hero__img"
+            src="./img/hero/header_img_desc.jpg"
+            alt="doctors treat a cat"
+          />
+        </div>
+      </section>
+      <section class="vacancies container">
+        <h2 class="vacancies__title">Открытые вакансии</h2>
+        <ul class="vacancies__list">
+          <li class="vacancies__item">
+            <h3 class="vacancies__position">
+              Ветеринарный врач / ветеринарный врач хирург
+            </h3>
+            <h4 class="vacancies__reguirements">Наши ожидания:</h4>
+            <ul class="vacancies__reguirements-list">
+              <li class="vacancies__reguirements-item">
+                Оконченное высшее профильное образование
+              </li>
+              <li class="vacancies__reguirements-item">
+                Практический опыт работы от 2-3 лет
+              </li>
+              <li class="vacancies__reguirements-item">
+                Любовь к животным и желание им помочь
+              </li>
+              <li class="vacancies__reguirements-item">
+                Наличие сертификатов о пройденном дополнительном образовании
+              </li>
+              <li class="vacancies__reguirements-item">
+                Заинтересованность в развитии и совершенствовании своих знаний в
+                области ветеринарии
+              </li>
+              <li class="vacancies__reguirements-item">
+                Способность выдерживать высокий темп работы и большую нагрузку,
+                внимательность, аккуратность, коммуникабельность,
+                стрессоустойчивость, умение работать в команде
+              </li>
+            </ul>
+            <p class="vacancies__doctortext">
+              Врач-терапевт — это универсальный доктор. Именно с этого
+              специалиста начинается любой приём, будь то лечение, профилактика
+              или консультация на такие темы, как особенности выращивания,
+              содержания и кормления питомца!
+            </p>
+            <h4 class="vacancies__tasks">Задачи:</h4>
+            <ul class="vacancies__tasks-list">
+              <li class="vacancies__tasks-item">
+                1. Оконченное высшее профильное образование
+              </li>
+              <li class="vacancies__tasks-item">
+                2. Практический опыт работы от 2-3 лет
+              </li>
+              <li class="vacancies__tasks-item">
+                3. Любовь к животным и желание им помочь
+              </li>
+            </ul>
+            <h4 class="vacancies__conditions">Условии труда:</h4>
+            <ul class="vacancies__conditions-list">
+              <li class="vacancies__conditions-item">
+                1. Оконченное высшее профильное образование
+              </li>
+              <li class="vacancies__conditions-item">
+                2. Практический опыт работы от 2-3 лет
+              </li>
+              <li class="vacancies__conditions-item">
+                3. Любовь к животным и желание им помочь
+              </li>
+            </ul>
+            <p class="vacancies__doctortext">
+              Врач-терапевт — это универсальный доктор. Именно с этого
+              специалиста начинается любой приём, будь то лечение, профилактика
+              или консультация на такие темы, как особенности выращивания,
+              содержания и кормления питомца!
+            </p>
+          </li>
+          <li class="vacancies__item">
+            <h3 class="vacancies__position">
+              Ассистент ветеринарного врача / операционная сестра
+            </h3>
+            <h4 class="vacancies__reguirements">Наши ожидания:</h4>
+            <ul class="vacancies__reguirements-list">
+              <li class="vacancies__reguirements-item">
+                Оконченное высшее профильное образование
+              </li>
+              <li class="vacancies__reguirements-item">
+                Практический опыт работы от 2-3 лет
+              </li>
+              <li class="vacancies__reguirements-item">
+                Любовь к животным и желание им помочь
+              </li>
+              <li class="vacancies__reguirements-item">
+                Наличие сертификатов о пройденном дополнительном образовании
+              </li>
+              <li class="vacancies__reguirements-item">
+                Заинтересованность в развитии и совершенствовании своих знаний в
+                области ветеринарии
+              </li>
+              <li class="vacancies__reguirements-item">
+                Способность выдерживать высокий темп работы и большую нагрузку,
+                внимательность, аккуратность, коммуникабельность,
+                стрессоустойчивость, умение работать в команде
+              </li>
+            </ul>
+            <p class="vacancies__doctortext">
+              Врач-терапевт — это универсальный доктор. Именно с этого
+              специалиста начинается любой приём, будь то лечение, профилактика
+              или консультация на такие темы, как особенности выращивания,
+              содержания и кормления питомца!
+            </p>
+            <h4 class="vacancies__tasks">Задачи:</h4>
+            <ul class="vacancies__tasks-list">
+              <li class="vacancies__tasks-item">
+                1. Оконченное высшее профильное образование
+              </li>
+              <li class="vacancies__tasks-item">
+                2. Практический опыт работы от 2-3 лет
+              </li>
+              <li class="vacancies__tasks-item">
+                3. Любовь к животным и желание им помочь
+              </li>
+            </ul>
+            <h4 class="vacancies__conditions">Условии труда:</h4>
+            <ul class="vacancies__conditions-list">
+              <li class="vacancies__conditions-item">
+                1. Оконченное высшее профильное образование
+              </li>
+              <li class="vacancies__conditions-item">
+                2. Практический опыт работы от 2-3 лет
+              </li>
+              <li class="vacancies__conditions-item">
+                3. Любовь к животным и желание им помочь
+              </li>
+            </ul>
+            <p class="vacancies__doctortext">
+              Врач-терапевт — это универсальный доктор. Именно с этого
+              специалиста начинается любой приём, будь то лечение, профилактика
+              или консультация на такие темы, как особенности выращивания,
+              содержания и кормления питомца!
+            </p>
+          </li>
+          <li class="vacancies__item">
+            <h3 class="vacancies__position">Менеджер по работе с клиентами</h3>
+            <h4 class="vacancies__reguirements">Наши ожидания:</h4>
+            <ul class="vacancies__reguirements-list">
+              <li class="vacancies__reguirements-item">
+                Оконченное высшее профильное образование
+              </li>
+              <li class="vacancies__reguirements-item">
+                Практический опыт работы от 2-3 лет
+              </li>
+              <li class="vacancies__reguirements-item">
+                Любовь к животным и желание им помочь
+              </li>
+              <li class="vacancies__reguirements-item">
+                Наличие сертификатов о пройденном дополнительном образовании
+              </li>
+              <li class="vacancies__reguirements-item">
+                Заинтересованность в развитии и совершенствовании своих знаний в
+                области ветеринарии
+              </li>
+              <li class="vacancies__reguirements-item">
+                Способность выдерживать высокий темп работы и большую нагрузку,
+                внимательность, аккуратность, коммуникабельность,
+                стрессоустойчивость, умение работать в команде
+              </li>
+            </ul>
+            <p class="vacancies__doctortext">
+              Врач-терапевт — это универсальный доктор. Именно с этого
+              специалиста начинается любой приём, будь то лечение, профилактика
+              или консультация на такие темы, как особенности выращивания,
+              содержания и кормления питомца!
+            </p>
+            <h4 class="vacancies__tasks">Задачи:</h4>
+            <ul class="vacancies__tasks-list">
+              <li class="vacancies__tasks-item">
+                1. Оконченное высшее профильное образование
+              </li>
+              <li class="vacancies__tasks-item">
+                2. Практический опыт работы от 2-3 лет
+              </li>
+              <li class="vacancies__tasks-item">
+                3. Любовь к животным и желание им помочь
+              </li>
+            </ul>
+            <h4 class="vacancies__conditions">Условии труда:</h4>
+            <ul class="vacancies__conditions-list">
+              <li class="vacancies__conditions-item">
+                1. Оконченное высшее профильное образование
+              </li>
+              <li class="vacancies__conditions-item">
+                2. Практический опыт работы от 2-3 лет
+              </li>
+              <li class="vacancies__conditions-item">
+                3. Любовь к животным и желание им помочь
+              </li>
+            </ul>
+            <p class="vacancies__doctortext">
+              Врач-терапевт — это универсальный доктор. Именно с этого
+              специалиста начинается любой приём, будь то лечение, профилактика
+              или консультация на такие темы, как особенности выращивания,
+              содержания и кормления питомца!
+            </p>
+          </li>
+        </ul>
+        <button class="vacancies__btn"></button>
+      </section>
+    </main>
+  </body>
+</html>
