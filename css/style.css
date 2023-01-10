@@ -207,7 +207,7 @@ menu__link:focus {
 .hero {
   position: relative;
   display: flex;
-  padding-top: 17px;
+  padding-top: 48px;
   padding-bottom: 80px;
 }
 .hero::after {
@@ -324,3 +324,410 @@ menu__link:focus {
   bottom: 0;
   right: 0;
 } */
+.vacancies {
+  position: relative;
+  padding-top: 96px;
+  padding-bottom: 64px;
+}
+.vacancies::after {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  width: 100%;
+  height: 1px;
+  bottom: 0;
+  right: 0;
+  background-color: var(--active-color);
+  border-radius: 8px;
+}
+.vacancies__title {
+  font-weight: 500;
+  font-size: 46px;
+  line-height: 1.5;
+  color: var(--secondary-color);
+  margin-bottom: 48px;
+}
+.vacancies__list {
+  position: relative;
+  padding-left: 70px;
+  padding-right: 50px;
+  /* padding-top: 48px; */
+  padding-bottom: 64px;
+}
+/* .vacancies__list::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  content: "";
+  display: inline-block;
+  width: 100%;
+  height: 1px;
+  background-color: #3897f0;
+  border-radius: 8px;
+} */
+.vacancies__item:not(:last-child) {
+  margin-bottom: 32px;
+}
+.vacancies__position {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 32px;
+}
+.vacancies__position-title {
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 1.25;
+  color: #3897f0;
+}
+/* .vacancies__position::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  content: "Подробнее:";
+  width: 20px;
+  height: 20px;
+  background-image: url(../img/sprite.svg);
+  background-size: contain;
+  fill: #3897f0; 
+} */
+.moredetails {
+  display: flex;
+  align-items: center;
+}
+.moredetails-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.43;
+  color: #3897f0;
+  margin-right: 18px;
+}
+.moredetails-icon {
+  width: 20px;
+  height: 20px;
+  fill: #3897f0;
+}
+.vacancies__reguirements {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 40px;
+  color: var(--secondary-color);
+}
+.vacancies__reguirements-list {
+  padding-left: 58px;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+.vacancies__reguirements-item {
+  position: relative;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 33px;
+}
+.vacancies__reguirements-item:not(:last-child) {
+  margin-bottom: 18px;
+}
+.vacancies__reguirements-item::before {
+  position: absolute;
+  top: 12px;
+  left: -30px;
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: var(--accent-color);
+}
+.vacancies__doctortext {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 1.5;
+}
+.vacancies__tasks {
+  margin-top: 48px;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 1.25;
+}
+.vacancies__conditions {
+  margin-top: 16px;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 1.25;
+}
+.vacancies__tasks-list,
+.vacancies__conditions-list {
+  padding-left: 30px;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  counter-reset: list;
+}
+.vacancies__tasks-item,
+.vacancies__conditions-item {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 33px;
+  counter-increment: list;
+}
+.vacancies__tasks-item:not(:last-child),
+.vacancies__conditions-item:not(:last-child) {
+  margin-bottom: 18px;
+}
+.vacancies__tasks-item::before {
+  content: counter(list) ". ";
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 1.5;
+  color: var(--accent-color);
+}
+.vacancies__conditions-item::before {
+  content: counter(list) ". ";
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 1.5;
+  color: var(--accent-color);
+}
+.btn {
+  padding: 18px 32px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #ffffff;
+  background-color: var(--accent-color);
+  border-radius: 4px;
+  border: none;
+}
+.btn:hover,
+.btn:focus {
+  background-color: var(--active-color);
+}
+.vacancies__btn {
+  margin-top: 48px;
+}
+
+.advantages {
+  position: relative;
+  padding: 96px 0px 64px 0px;
+}
+.advantages::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  content: "";
+  width: 100%;
+  height: 1px;
+  background-color: var(--active-color);
+  border-radius: 8px;
+}
+.advantages__title {
+  font-weight: 500;
+  font-size: 46px;
+  line-height: 1.5;
+  margin-bottom: 48px;
+}
+.advantages__item:not(:last-child) {
+  margin-bottom: 120px;
+}
+.advantages__row {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+.advantages__item:nth-child(2n) .advantages__row {
+  flex-direction: row-reverse;
+}
+.advantages__img {
+  max-width: 570px;
+}
+.advantages__description {
+  max-width: 500px;
+}
+.advantages__subtitle {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 1.25;
+  margin-bottom: 32px;
+}
+.advantages__text {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 1.5;
+}
+
+.doctor {
+  padding-top: 120px;
+}
+.doctor__row {
+  display: flex;
+  justify-content: space-between;
+}
+.doctor__image-part {
+  position: relative;
+}
+.doctor__img-wrapper::before {
+  content: " ";
+  width: 144px;
+  height: 144px;
+  position: absolute;
+  top: 100px;
+  left: -160px;
+  background-image: url(../img/doctorinfo/paw.png);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.doctor__img-wrapper::after {
+  z-index: 1;
+  position: absolute;
+  top: 112px;
+  left: -72px;
+  content: "";
+  width: 570px;
+  height: 534px;
+  background-image: url(../img/doctorinfo/ellipse_desc.png);
+}
+.doctor__information {
+  position: absolute;
+  bottom: -50px;
+  left: -34px;
+  width: 500px;
+  height: 125px;
+  padding: 24px 100px;
+  background: #ffffff;
+  box-shadow: -7px 7px 18px rgb(27 39 74 / 16%);
+  border-radius: 10px;
+}
+.doctor__information::after {
+  content: " ";
+  position: absolute;
+  top: -24px;
+  right: -22px;
+  width: 82px;
+  height: 82px;
+  border-radius: 50%;
+  background-color: var(--active-color);
+  background-image: url(../img/doctorinfo/stethoscope\ 1.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.doctor__name {
+  margin-bottom: 18px;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 1.5;
+  text-align: center;
+  color: var(--secondary-color);
+}
+.doctor__position {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  color: #222222;
+}
+
+.doctor__form-part {
+  max-width: 470px;
+}
+.doctor__title {
+  margin-bottom: 32px;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 1.5;
+  color: var(--secondary-color);
+}
+.doctor__cta {
+  margin-bottom: 48px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--secondary-color);
+}
+
+.doctor__form {
+  display: flex;
+  flex-direction: column;
+}
+.doctor__form-field {
+  position: relative;
+}
+.doctor__form-input {
+  width: 100%;
+  height: 34px;
+  border: none;
+  border-bottom: 1px solid #c2c2c2;
+  background-color: transparent;
+  margin-bottom: 24px;
+}
+.doctor__form-label {
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: rgba(27, 39, 74, 0.32);
+  transition: transform 250ms linear;
+}
+.doctor__form-input:focus + .doctor__form-label,
+.doctor__form-input:not(:placeholder-shown) + .doctor__form-label {
+  color: var(--secondary-color);
+  transform: translateY(-100%);
+}
+.doctor__form-label-comment {
+  display: block;
+  margin-bottom: 14px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.14;
+  color: var(--secondary-color);
+}
+.doctor__form-textarea {
+  width: 100%;
+  height: 110px;
+  border: none;
+  border-bottom: 1px solid #c2c2c2;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.25;
+  color: var(--secondary-color);
+  margin-bottom: 48px;
+}
+.doctor__checkbox {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  position: absolute;
+}
+.doctor__checkbox-icon {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  border-radius: 8px;
+  border: 1px solid var(--active-color);
+  margin-right: 24px;
+}
+.doctor__checkbox-policy {
+  display: flex;
+  align-items: center;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+
+  color: rgba(27, 39, 74, 0.64);
+}
+.doctor__policy-link {
+  color: var(--accent-color);
+}
+.doctor__checkbox:checked + .doctor__checkbox-icon {
+  background-image: url(../img/doctorinfo/full-check.svg);
+  background-color: var(--accent-color);
+  border-color: var(--accent-color);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-origin: border-box;
+}
+
+.doctor__btn {
+  margin-top: 32px;
+  width: 184px;
+}
