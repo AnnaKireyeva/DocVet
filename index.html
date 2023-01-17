@@ -448,21 +448,129 @@
             </div>
             <label class="doctor__checkbox-policy">
               <input type="checkbox" class="doctor__checkbox" name="checkbox-policy" value="reading" required>
-              <span class="doctor__checkbox-icon"></span>
-              <div class="wraper">
+              <span class="doctor__checkbox-icon"></span>              
                 Я соглашаюсь на обработку моих персональных данных в соответствии с указанными 
-              <a class="doctor__policy-link">здесь правилами</a>  
-              </div>
-              
-            </label>           
-            
-            
+              <a class="doctor__policy-link">здесь правилами</a>           
+            </label>   
+                   
             <button type="submit" class="doctor__btn btn">Отправить</button>
           </form>
         </div>
         </div>
       </section>
+      <section class="social-media">
+        <!-- <div class="container"> -->
+        <ul class="social-media__list">
+          <li class="social-media__item">
+            <div class="social-media__item-wrapper">
+            <a href="" class="social-media__link link">
+              <svg class="social-media__icon" width="33" height="33">
+                <use href="./img/sprite.svg#icon-insta"></use>
+              </svg>              
+            </a>
+            <a href="" class="social-media__link-name link">/dokvet</a>
+            </div>
+          </li>
+          <li class="social-media__item">
+            <div class="social-media__item-wrapper">
+              <a href="" class="social-media__link link">
+              <svg class="social-media__icon" width="33" height="33">
+                <use href="./img/sprite.svg#icon-facebook-f-50"></use>
+              </svg>              
+              </a>
+              <a href="" class="social-media__link-name link">/dokvetcom</a>
+            </div>            
+          </li>
+          <li class="social-media__item">
+            <div class="social-media__item-wrapper">
+              <a href="" class="social-media__link link">
+                <svg class="social-media__icon" width="33" height="33">
+                <use href="./img/sprite.svg#icon-vkontakte"></use>
+                </svg>                                    
+              </a>   
+               <a href="" class="social-media__link-name link">/dokvet</a>       
+            </div>              
+          </li>
+        </ul>
+        <!-- </div> -->
+      </section>
+      <section class="map">  
+        <h1 class="map__title visually-hidden">Как нас найти</h1>      
+        <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d707.1160667802238!2d30.454213503878634!3d59.91511146810874!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46962e3e01c47a21%3A0x7a1d6636531b8d41!2sUlitsa%20Kollontay%2C%2011%2C%20Sankt-Peterburg%2C%20Russia%2C%20193318!5e0!3m2!1sen!2sua!4v1673883937296!5m2!1sen!2sua" width="100%" height="702" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+          <div id="map"></div>
+          <div id="info" class="information">
+            <h2 class="adresstitle">Санкт-Петербург, ул. Коллонтай, 11</h2>
+            <div class="metro">
+              <img src="./for sprite/metro.svg" alt="metro">
+              <span class="metro-text">Проспект Большевиков</span> 
+            </div>
+            <div class="stops">
+            <h2 class="stops-title">Автобусные остановки:</h2>
+            <ul class="stops-list">
+              <li class="stops-item">- Улица Белышева <br>
+                (авт. 191, трол. 33,  маршр. К-269, К-83, К-254)
+              </li>
+              <li class="stops-item">- Искровский проспект  <br>
+                (авт. 118, трол. 12, маршр. К-155А, К-12, К 83)
+              </li>
+            </ul>
+            </div>
+            <p class="parking">Парковка на территории для пациентов и их хозяев</p>
+          </div>
+      </section>
+      <footer class="footer">
+        <div class="footer__container container">
+          <div class=""></div>footer__contacts
+          <div class="footer__menu"></div>
+          <div class="footer__logo"></div>
+          <div class="footer__socialmedia"></div>
+        </div>
 
-    </main>
+      </footer>
+
+    </main>    
+<!-- key: AIzaSyC3VWX1_42niOxKjZrq-v09PEMazMEl7FQ -->
+        <script>
+          function initMap() {
+            // The location of Uluru
+            const uluru = { lat: 59.91507, lng: 30.45498 };
+            // The map, centered at Uluru
+            const map = new google.maps.Map(document.getElementById("map"), {
+              zoom: 18,
+              center: uluru,              
+            });
+            // The marker, positioned at Uluru
+            const marker = new google.maps.Marker({
+              position: uluru,
+              map: map,
+            });
+            const contentString = '<p>улица Коллонтай, 11</p>';
+            const infoWindow = new google.maps.InfoWindow({
+              content: contentString,
+            });
+            marker.addListener("click", ()=> {
+              infoWindow.open({
+                anchor: marker,
+                map,
+              });
+            });
+          }
+        </script>
+        <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC3VWX1_42niOxKjZrq-v09PEMazMEl7FQ&callback=initMap&v=weekly"
+      defer
+    ></script>
+    <script>      
+      const info = document.getElementById("info");      
+      const map = document.getElementById("map");
+      function hideInfo () {
+        info.hidden = true;
+      }
+      const showInfo = () => {
+        info.hidden = false;
+      }
+      info.onclick = hideInfo;
+      map.onclick = showInfo;
+    </script>
   </body>
 </html>
