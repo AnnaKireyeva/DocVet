@@ -5,6 +5,8 @@
   --accent-color: #ff7800;
   --active-color: #ffa14d;
   --secondary-accent-color: #3897f0;
+  --transition-duration: 250ms;
+  --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   /* --icons-color: #afb1b8;
   --transition-duration: 250ms;
   --timing-function: cubic-bezier(0.4, 0, 0.2, 1); */
@@ -1062,4 +1064,12 @@ menu__link:focus {
 }
 .footer__copyright-link:not(:last-child) {
   margin-right: 30px;
+}
+/* Выпадающий список */
+.moredetails-icon.reversed {
+  fill: #ff7800;
+  transform: rotate(0.5turn);
+}
+.moredetails-text.hide {
+  display: none;
 }

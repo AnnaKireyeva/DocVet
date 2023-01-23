@@ -137,7 +137,7 @@
         <ul class="vacancies__list">
           <li class="vacancies__item">
             <div class="vacancies__position">
-              <h3 class="vacancies__position-title">
+              <h3 id="position" class="vacancies__position-title">
                 Ветеринарный врач / ветеринарный врач хирург
               </h3>
               <div class="moredetails">
@@ -147,6 +147,7 @@
                 </svg>
               </div>
             </div>
+            <div class="vacancies__moredetails-wrapper">
             <h4 class="vacancies__reguirements">Наши ожидания:</h4>
             <ul class="vacancies__reguirements-list">
               <li class="vacancies__reguirements-item">
@@ -208,10 +209,11 @@
               содержания и кормления питомца!
             </p>
             <button class="vacancies__btn btn">Откликнуться</button>
+            </div>
           </li>
           <li class="vacancies__item">
             <div class="vacancies__position">
-              <h3 class="vacancies__position-title">
+              <h3 id="position" class="vacancies__position-title">
                 Ассистент ветеринарного врача / операционная сестра
               </h3>
               <div class="moredetails">
@@ -286,7 +288,7 @@
           </li>
           <li class="vacancies__item">
             <div class="vacancies__position">
-              <h3 class="vacancies__position-title">
+              <h3 id="position" class="vacancies__position-title">
                 Менеджер по работе с клиентами
               </h3>
               <div class="moredetails">
@@ -668,6 +670,22 @@
       }
       info.onclick = hideInfo;
       map.onclick = showInfo;
+    </script>
+    <script>
+      // let arrow = document.getElementsByClassName('moredetails-icon');
+      let arrow = document.querySelectorAll('.moredetails-icon');
+      console.log(arrow.length);
+      for (i=0; i<arrow.length; i++) {
+        // let position = document.getElementById("position");
+        let moredetailsText = arrow[i].previousElementSibling;
+        let thisArrow = arrow[i];   
+          arrow[i].addEventListener('click', function() {
+          // alert('Click');
+          moredetailsText.classList.toggle('hide');
+          thisArrow.classList.toggle('reversed');
+        })
+
+      }
     </script>
   </body>
 </html>
